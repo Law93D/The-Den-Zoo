@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Header Section */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 15%;
+    background-image: url(images/background.jpeg);
+    background-repeat: repeat-x;
+}
+
+#header img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+}
+
+/* tabs tops */
+#tabs-top {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#tabs-top a{
+    float: left;
+    display: block;
+    width: 25%;
+    height: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+#tabs-top a:hover {
+    background-color: rgba(53, 170, 141, .8);
+    color: whitesmoke;
+    border-radius: 50px;
+}
+
+
+/* Home Page */
+#home {
+    margin-top: 100px;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bottom tabs */
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 8%;
+    background-image: url(images/background.jpeg)
+}
+
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+#tabs-bottom a:hover {
+    background-color: rgba(53, 170, 141, .8);
+    color: whitesmoke;
+    border-radius: 50px;
+}
+
+/* Animals Page Section Main */
+#main {
+    margin-top: 104px;
+    background: url(images/jag_blur_cover.jpeg) no-repeat center center;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+
+#content {
+    padding-top: 1px;
+    padding-bottom: 40px;
+}
+
+/* info box */
+a.info-box {
+    text-decoration: none;
+    background: rgba(53, 170, 141, .8);
+    width: 90%;
+    height: 80px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+a.info-box:first-of-type {
+    margin-top: 45px;
+}
+
+a.info-box:last-of-type {
+    margin-bottom: 25px;
+}
+
+.info-box img {
+    height: 80px;
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+}
+
+.info-text {
+    flex: 1;
+    color: #572300;
+}
+
+.info-box h3 {
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: whitesmoke;
+}
+
+.info-box p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: whitesmoke;
+}
+
+.info-box img.right {
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+/* FULLINFO BOX */
+#full-info-box {
+    background-color: rgba(53, 170, 141, .8);
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+#full-info-box img{
+    width: 100%;
+}
+
+#full-info-box h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#full-info-box h4 {
+    text-align-last: center;
+    font-weight: bolder;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 65px;    /* Distance from bottom */
+    right: 100px;     /* Distance from left */
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #35aa8d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #543838;
+}
+
+/* EVENTS PAGE */
+#header {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#header img {
+    width: 60%;
+    max-height: 100px;
+}
+
+#main {
+    padding: 20px;
+}
+
+h2 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #35aa8d;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#main .event:last-child {
+    margin-bottom: 60px;
+}
