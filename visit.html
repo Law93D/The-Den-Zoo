@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Visit | Den-Doo Wildlife Park</title>
+    <style>
+        :root {
+            --primary: #4a8f29;
+            --secondary: #f5a623;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            background-color: var(--dark);
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1550358864-518f202c02ba');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .info-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .info-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .price-table th, .price-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .price-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .price-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .map-container {
+            height: 400px;
+            background-color: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #e6951a;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Den Zoo</h1>
+        <p>Explore, Learn, Conserve</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Our Animals</a></li>
+            <li><a href="workshop.html">Workshops</a></li>
+            <li><a href="visit.html">Plan Your Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>Plan Your Visit</h2>
+            <p>Everything you need to know before visiting Den-Doo Wildlife Park</p>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Hours of Operation</h3>
+                <p><strong>Open daily</strong> (except December 25)</p>
+                <ul>
+                    <li><strong>Spring/Summer (Apr-Sep):</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Fall/Winter (Oct-Mar):</strong> 9:00 AM - 5:00 PM</li>
+                    <li><strong>Last admission:</strong> 1 hour before closing</li>
+                </ul>
+                <p>Special evening events may have different hours.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Admission Prices</h3>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Ticket Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Children (3-12)</td>
+                            <td>R1 000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Seniors (65+)</td>
+                            <td>R3 000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Adults (13-64)</td>
+                            <td>R5 000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Family Pass (2 adults + 2 children)</td>
+                            <td>R10 000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Membership</td>
+                            <td>R20 000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="btn">Buy Tickets Online</a>
+            </div>
+            
+            <div class="info-card">
+                <h3>Park Amenities</h3>
+                <ul>
+                    <li>Free parking</li>
+                    <li>Wheelchair accessible</li>
+                    <li>Stroller rentals</li>
+                    <li>Multiple dining options</li>
+                    <li>Gift shops</li>
+                    <li>First aid station</li>
+                    <li>Nursing room</li>
+                    <li>ATM on site</li>
+                </ul>
+                <p>Service animals welcome with proper documentation.</p>
+            </div>
+        </div>
+        
+        <h2>Getting Here</h2>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>
+                    The Den Zoo<br>
+                    123 Conservation Way<br>
+                    Wildville, WD 12345
+                </p>
+                <a href="#" class="btn">Get Directions</a>
+            </div>
+            
+            <div class="info-card">
+                <h3>By Public Transport</h3>
+                <p><strong>Bus:</strong> Take route 42 to Wildlife Park stop</p>
+                <p><strong>Train:</strong> Nearest station is Wildville Central (2 miles away)</p>
+                <p>Shuttle service available from train station weekends and holidays.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>By Car</h3>
+                <p>From downtown Wildville:</p>
+                <ol>
+                    <li>Take Highway 7 west</li>
+                    <li>Exit at Conservation Way</li>
+                    <li>Follow signs to park entrance</li>
+                </ol>
+                <p>Free parking for 500 vehicles. Overflow parking available on busy days.</p>
+            </div>
+        </div>
+        
+        <h2>Park Map</h2>
+        <div class="map-container">
+            <!-- Replace with your actual embedded map or image -->
+            <iframe src="images/map_2.png" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="info-card">
+            <h3>Accessibility</h3>
+            <p>The Den Zoo Wildlife Park is committed to being accessible to all visitors:</p>
+            <ul>
+                <li>Wheelchair accessible paths throughout 90% of the park</li>
+                <li>Motorized scooter rentals available</li>
+                <li>Accessible restrooms in all main areas</li>
+                <li>Braille guidebooks available at entrance</li>
+                <li>Sign language interpreters available with 2 weeks notice</li>
+            </ul>
+            <p>Please contact us in advance for any special accommodation needs.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 The Den Zoo. All rights reserved.</p>
+        <p>123 Conservation Way, Wildville, WD 12345 | (555) 123-4567</p>
+        <p>Follow us on social media: 
+            <a href="#" style="color: var(--secondary);">Facebook</a> | 
+            <a href="#" style="color: var(--secondary);">Instagram</a> | 
+            <a href="#" style="color: var(--secondary);">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
