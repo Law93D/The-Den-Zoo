@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Den-Doo Wildlife Park</title>
+    <style>
+        :root {
+            --primary: #4a8f29;
+            --secondary: #f5a623;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            background-color: var(--dark);
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .contact-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #e6951a;
+        }
+        
+        .map-container {
+            height: 400px;
+            background-color: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Den Zoo</h1>
+        <p>Explore, Learn, Conserve</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Our Animals</a></li>
+            <li><a href="workshop.html">Workshops</a></li>
+            <li><a href="visit.html">Plan Your Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with questions, feedback, or partnership opportunities.</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="education">Education Programs</option>
+                            <option value="group">Group Visits</option>
+                            <option value="membership">Membership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong><br>
+                The Den Zoo<br>
+                123 Conservation Way<br>
+                Wildville, WD 12345</p>
+                
+                <p><strong>Phone:</strong><br>
+                (555) 123-4567</p>
+                
+                <p><strong>Email:</strong><br>
+                info@den-doo-wildlife.org</p>
+                
+                <p><strong>Park Hours:</strong><br>
+                9:00 AM - 5:00 PM Daily</p>
+                
+                <h3>Department Contacts</h3>
+                <p><strong>Education:</strong> education@den-zoo-wildlife.org<br>
+                <strong>Group Visits:</strong> groups@den-zoo-wildlife.org<br>
+                <strong>Media:</strong> media@den-zoo-wildlife.org</p>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="YouTube">yt</a>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <!-- Replace with your actual embedded map -->
+            <iframe src="images/map_2.png" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="contact-card">
+            <h3>Frequently Asked Questions</h3>
+            <details>
+                <summary>What are your current COVID-19 safety measures?</summary>
+                <p>We follow all local health guidelines. Currently, masks are optional but recommended in indoor areas. Hand sanitizer stations are available throughout the park.</p>
+            </details>
+            
+            <details>
+                <summary>Can I bring outside food into the park?</summary>
+                <p>Yes, you're welcome to bring your own food and non-alcoholic beverages. Picnic areas are available near the main entrance.</p>
+            </details>
+            
+            <details>
+                <summary>Do you offer wheelchair rentals?</summary>
+                <p>Yes, we have a limited number of wheelchairs and ECVs available for rent on a first-come, first-served basis at the main entrance.</p>
+            </details>
+            
+            <details>
+                <summary>How can I support the park's conservation efforts?</summary>
+                <p>You can support us by becoming a member, donating, or adopting an animal through our conservation program.</p>
+            </details>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 The Den Zoo. All rights reserved.</p>
+        <p>123 Conservation Way, Wildville, WD 12345 | (555) 123-4567</p>
+        <p>Follow us on social media: 
+            <a href="#" style="color: var(--secondary);">Facebook</a> | 
+            <a href="#" style="color: var(--secondary);">Instagram</a> | 
+            <a href="#" style="color: var(--secondary);">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
